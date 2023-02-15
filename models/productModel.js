@@ -13,7 +13,7 @@ const getAllProductsModel = async () => {
 const findProducts= async (params) => {
   const search = {};
   try {
-    if (params.item) {
+    if (params.gender) {
       search['gender'] = { $regex: `${params.gender}`, $options: 'i' }
     }
     if (params.item) {
